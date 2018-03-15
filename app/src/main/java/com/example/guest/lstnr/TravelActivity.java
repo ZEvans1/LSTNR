@@ -16,6 +16,7 @@ public class TravelActivity extends AppCompatActivity implements View.OnClickLis
     @BindView(R.id.buttonMinutes) Button mButtonMinutes;
     @BindView(R.id.minutesInput) EditText mMinutesInput;
     @BindView(R.id.recordedTimes) TextView mRecordedTimes;
+    @BindView(R.id.buttonTravelToListen) Button mButtonTravelToListen;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +25,18 @@ public class TravelActivity extends AppCompatActivity implements View.OnClickLis
 
         ButterKnife.bind(this);
         mButtonMinutes.setOnClickListener(this);
-//        Intent intent = getIntent();
+        mButtonTravelToListen.setOnClickListener(this);
+
+        mButtonTravelToListen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String inputtedMinutes = mMinutesInput.getText().toString();
+                int minutes = Integer.parseInt(inputtedMinutes);
+                Intent intent = new Intent(TravelActivity.this, ListenActivity.class);
+                intent.putExtra("inputtedMinutes", inputtedMinutes);
+                startActivity(intent);
+            }
+        });
 
     }
 
@@ -33,8 +45,6 @@ public class TravelActivity extends AppCompatActivity implements View.OnClickLis
             String inputtedMinutes = mMinutesInput.getText().toString();
             int minutes = Integer.parseInt(inputtedMinutes);
             mRecordedTimes.setText("Your travel time(s): " + minutes);
-        } else {
-
         }
     }
 }

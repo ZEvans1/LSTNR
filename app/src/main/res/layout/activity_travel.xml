@@ -26,7 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="33dp"
+        android:layout_marginBottom="37dp"
         android:text="Submit"
         tools:layout_editor_absoluteX="148dp"
         tools:layout_editor_absoluteY="446dp" />
@@ -36,8 +36,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/minutesInput"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="57dp"
         android:layout_toEndOf="@+id/minutesInput"
         android:layout_toRightOf="@+id/minutesInput"
         android:text="TextView" />
+
+    <Button
+        android:id="@+id/buttonTravelToListen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonMinutes"
+        android:layout_alignBottom="@+id/buttonMinutes"
+        android:layout_alignEnd="@+id/recordedTimes"
+        android:layout_alignRight="@+id/recordedTimes"
+        android:text="Listen" />
 </RelativeLayout>
