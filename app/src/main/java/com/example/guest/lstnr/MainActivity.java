@@ -1,5 +1,6 @@
 package com.example.guest.lstnr;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -27,6 +28,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     public void onClick(View v) {
+        if (v == mButtonTravel) {
+            Intent intent = new Intent(MainActivity.this, TravelActivity.class);
+        } else if (v == mButtonListen ) {
+            Intent intent = new Intent(MainActivity.this, ListenActivity.class);
+        } else if (v == mButtonAbout ) {
+            Intent intent = new Intent(MainActivity.this, AboutActivity.class);
+        } else {
+
+        }
 
     }
 }
