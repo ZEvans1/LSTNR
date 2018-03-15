@@ -30,4 +30,14 @@
         android:text="Submit"
         tools:layout_editor_absoluteX="148dp"
         tools:layout_editor_absoluteY="446dp" />
+
+    <TextView
+        android:id="@+id/recordedTimes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/minutesInput"
+        android:layout_marginTop="56dp"
+        android:layout_toEndOf="@+id/minutesInput"
+        android:layout_toRightOf="@+id/minutesInput"
+        android:text="TextView" />
 </RelativeLayout>
