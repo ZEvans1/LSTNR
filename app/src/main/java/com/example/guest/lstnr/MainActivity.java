@@ -30,10 +30,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         if (v == mButtonTravel) {
             Intent intent = new Intent(MainActivity.this, TravelActivity.class);
+            startActivity(intent);
         } else if (v == mButtonListen ) {
             Intent intent = new Intent(MainActivity.this, ListenActivity.class);
+            startActivity(intent);
         } else if (v == mButtonAbout ) {
             Intent intent = new Intent(MainActivity.this, AboutActivity.class);
+            startActivity(intent);
         } else {
 
         }
