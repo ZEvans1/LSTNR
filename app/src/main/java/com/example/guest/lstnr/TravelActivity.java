@@ -40,10 +40,14 @@ public class TravelActivity extends AppCompatActivity implements View.OnClickLis
         mButtonTravelToListen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String inputtedMinutes = mMinutesInput.getText().toString();
-                int minutes = Integer.parseInt(inputtedMinutes);
+                Integer sum = 0;
+                for (int i = 0; i < timesInt.size(); i++){
+                    sum = sum + timesInt.get(i);
+                }
+                double average = (sum/timesInt.size());
+                String averageString = Double.toString(average);
                 Intent intent = new Intent(TravelActivity.this, ListenActivity.class);
-                intent.putExtra("inputtedMinutes", inputtedMinutes);
+                intent.putExtra("averageString", averageString);
                 startActivity(intent);
             }
         });
@@ -60,3 +64,9 @@ public class TravelActivity extends AppCompatActivity implements View.OnClickLis
         }
     }
 }
+
+//                String inputtedMinutes = mMinutesInput.getText().toString();
+//                int minutes = Integer.parseInt(inputtedMinutes);
+//                Intent intent = new Intent(TravelActivity.this, ListenActivity.class);
+//                intent.putExtra("inputtedMinutes", inputtedMinutes);
+//                startActivity(intent);

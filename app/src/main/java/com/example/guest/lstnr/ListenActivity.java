@@ -18,8 +18,8 @@ public class ListenActivity extends AppCompatActivity {
         setContentView(R.layout.activity_listen);
         ButterKnife.bind(this);
         Intent intent = getIntent();
-        String inputtedMinutes = intent.getStringExtra("inputtedMinutes");
-        mMinutes.setText("Your time: " + inputtedMinutes);
+        String averageString = intent.getStringExtra("averageString");
+        mMinutes.setText("Your average travel time: " + averageString + "min");
 
     }
 
