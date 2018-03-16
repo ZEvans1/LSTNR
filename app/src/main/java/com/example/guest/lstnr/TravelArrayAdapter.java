@@ -18,4 +18,17 @@ public class TravelArrayAdapter extends ArrayAdapter{
         this.mTimesInt = mTimesInt;
     }
 
+    @Override
+    public Object getItem(int position) {
+        String time = mTimes.get(position);
+        Integer timeInt = mTimesInt.get(position);
+        return String.format("Your time: %s minutes", time);
+
+    }
+
+    @Override
+    public int getCount() {
+        return mTimes.size();
+    }
+
 }

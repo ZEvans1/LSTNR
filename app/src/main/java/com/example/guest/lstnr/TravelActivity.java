@@ -34,7 +34,7 @@ public class TravelActivity extends AppCompatActivity implements View.OnClickLis
         ButterKnife.bind(this);
         mButtonMinutes.setOnClickListener(this);
         mButtonTravelToListen.setOnClickListener(this);
-        ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, times);
+        TravelArrayAdapter adapter = new TravelArrayAdapter(this, android.R.layout.simple_list_item_1, times, timesInt);
         mMinutesList.setAdapter(adapter);
 
         mButtonTravelToListen.setOnClickListener(new View.OnClickListener() {
