@@ -6,7 +6,7 @@
 
 ## Idea/Explanation
 
-_This app is intended for users who would like to find podcasts or song playlists to listen to while they travel. The user inputs travel times and is given an average travel time. Later, API calls will return media for the user to listen to see track durations._
+_This app is intended for users who would like to find podcasts or song playlists to listen to while they travel. The user inputs travel times and is given an average travel time. Later, API calls will return media for the user to listen to and match track durations with their average travel time._
 
 ### Specs
 | Behavior | Input | Output |
@@ -27,9 +27,16 @@ _This app is intended for users who would like to find podcasts or song playlist
 * _Open cloned repository in Android Studio_
 * _Run app on an Android emulator (designed for Nexus 6)_
 
-## Known Bugs
+App instructions:
+* _Press the Travel button on the main page_
+* _Enter a number into the edit field and press submit to see your number stored in a list (for now you must close the input keyboard to see results)_
+* _Press the Listen button on the Travel page to view your average travel time_
 
-_No known issues._
+## Known Bugs / Issues
+
+* _User data is not passed between all activities --> navigating from Listen to any other activity besides Travel will cause entered data to be 'forgotten'._
+* _Forms are not automatically emptied_
+* _List of user travel times does not display until the input keyboard is closed_
 
 ## Support and contact details
 
