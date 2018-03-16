@@ -1,4 +1,5 @@
 # _LSTNR_
+## _(under construction)_
 
 #### _A mobile app intended to match user travel times with podcasts / playlists of similar duration. Android week 1 @ Epicodus, Mar. 16, 2018._
 
