@@ -7,6 +7,13 @@
     android:layout_height="match_parent"
     tools:context="com.example.guest.lstnr.TravelActivity">
 
+    <ListView
+        android:id="@+id/minutesList"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
     <EditText
         android:id="@+id/minutesInput"
         android:layout_width="wrap_content"
@@ -16,7 +23,7 @@
         android:layout_marginTop="48dp"
         android:ems="10"
         android:inputType="number"
-        android:hint="Enter travel time in minutes"
+        android:hint="Enter travel time (minutes)"
         tools:layout_editor_absoluteX="85dp"
         tools:layout_editor_absoluteY="71dp" />
 
@@ -31,15 +38,15 @@
         tools:layout_editor_absoluteX="148dp"
         tools:layout_editor_absoluteY="446dp" />
 
-    <TextView
-        android:id="@+id/recordedTimes"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/minutesInput"
-        android:layout_marginTop="57dp"
-        android:layout_toEndOf="@+id/minutesInput"
-        android:layout_toRightOf="@+id/minutesInput"
-        android:text="TextView" />
+    <!--<TextView-->
+        <!--android:id="@+id/recordedTimes"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/minutesInput"-->
+        <!--android:layout_marginTop="57dp"-->
+        <!--android:layout_toEndOf="@+id/minutesInput"-->
+        <!--android:layout_toRightOf="@+id/minutesInput"-->
+        <!--android:text="TextView" />-->
 
     <Button
         android:id="@+id/buttonTravelToListen"
@@ -47,7 +54,5 @@
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/buttonMinutes"
         android:layout_alignBottom="@+id/buttonMinutes"
-        android:layout_alignEnd="@+id/recordedTimes"
-        android:layout_alignRight="@+id/recordedTimes"
         android:text="Listen" />
 </RelativeLayout>
