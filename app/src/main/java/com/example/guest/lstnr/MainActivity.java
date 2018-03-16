@@ -12,7 +12,7 @@ import butterknife.ButterKnife;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
     @BindView(R.id.buttonTravel) Button mButtonTravel;
-    @BindView(R.id.buttonListen) Button mButtonListen;
+//    @BindView(R.id.buttonListen) Button mButtonListen;
     @BindView(R.id.buttonAbout) Button mButtonAbout;
 
 
@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         ButterKnife.bind(this);
         mButtonTravel.setOnClickListener(this);
-        mButtonListen.setOnClickListener(this);
+//        mButtonListen.setOnClickListener(this);
         mButtonAbout.setOnClickListener(this);
     }
 
@@ -31,10 +31,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (v == mButtonTravel) {
             Intent intent = new Intent(MainActivity.this, TravelActivity.class);
             startActivity(intent);
-        } else if (v == mButtonListen ) {
-            Intent intent = new Intent(MainActivity.this, ListenActivity.class);
-            startActivity(intent);
-        } else if (v == mButtonAbout ) {
+        }
+//        else if (v == mButtonListen ) {
+//            Intent intent = new Intent(MainActivity.this, ListenActivity.class);
+//            startActivity(intent);
+//        }
+        else if (v == mButtonAbout ) {
             Intent intent = new Intent(MainActivity.this, AboutActivity.class);
             startActivity(intent);
         } else {

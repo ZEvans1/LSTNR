@@ -19,7 +19,7 @@ public class ListenActivity extends AppCompatActivity {
         ButterKnife.bind(this);
         Intent intent = getIntent();
         String averageString = intent.getStringExtra("averageString");
-        mMinutes.setText("Your average travel time: " + averageString + "min");
+        mMinutes.setText("Your average travel time: " + averageString + " min");
 
     }
 

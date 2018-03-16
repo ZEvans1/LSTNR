@@ -38,12 +38,12 @@
         android:layout_marginStart="13dp"
         android:text="Travel" />
 
-    <Button
-        android:id="@+id/buttonListen"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/buttonTravel"
-        android:layout_alignBottom="@+id/buttonTravel"
-        android:layout_centerHorizontal="true"
-        android:text="Listen" />
+    <!--<Button-->
+        <!--android:id="@+id/buttonListen"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignBaseline="@+id/buttonTravel"-->
+        <!--android:layout_alignBottom="@+id/buttonTravel"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:text="Listen" />-->
 </RelativeLayout>
