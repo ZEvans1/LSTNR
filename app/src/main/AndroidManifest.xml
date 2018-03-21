@@ -25,10 +25,15 @@
         <activity android:name=".ListenActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TravelActivity">
+            </meta-data>
+        </activity>
+        <activity android:name=".AboutActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity">
             </meta-data>
         </activity>
-        <activity android:name=".AboutActivity"/>
     </application>
 
 </manifest>

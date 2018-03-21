@@ -7,23 +7,14 @@
     android:layout_height="match_parent"
     tools:context="com.example.guest.lstnr.TravelActivity">
 
-    <ListView
-        android:id="@+id/minutesList"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
 
     <EditText
         android:id="@+id/minutesInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
-        android:layout_marginEnd="19dp"
-        android:layout_marginRight="19dp"
-        android:layout_marginTop="14dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="73dp"
         android:ems="10"
         android:hint="Enter travel time (min)"
         android:inputType="number"
@@ -36,29 +27,41 @@
         android:id="@+id/buttonMinutes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/minutesInput"
-        android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/minutesInput"
-        android:layout_marginBottom="35dp"
-        android:text="Submit"
-        tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="446dp" />
+        android:layout_below="@+id/minutesInput"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Submit" />
 
-    <!--<TextView-->
-        <!--android:id="@+id/recordedTimes"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_below="@+id/minutesInput"-->
-        <!--android:layout_marginTop="57dp"-->
-        <!--android:layout_toEndOf="@+id/minutesInput"-->
-        <!--android:layout_toRightOf="@+id/minutesInput"-->
-        <!--android:text="TextView" />-->
 
     <Button
         android:id="@+id/buttonTravelToListen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/buttonMinutes"
-        android:layout_alignBottom="@+id/buttonMinutes"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="17dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="17dp"
         android:text="Listen" />
+
+    <Button
+        android:id="@+id/buttonTimes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonTravelToListen"
+        android:layout_alignBottom="@+id/buttonTravelToListen"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp"
+        android:text="Your Times" />
+
+    <TextView
+        android:id="@+id/recordedTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="TextView" />
 </RelativeLayout>
